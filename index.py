@@ -1,14 +1,15 @@
 import smtplib
 from email.mime.text import MIMEText
-from email.header import Header
-print("""\033[1;34;40m
+import time
+print("""\033[0;34;40m
       _                 _                          
      | |               | |                         
      | |__   ___   ___ | | ___ __ ___   __ _ _ __  
      | '_ \ / _ \ / _ \| |/ / '_ ` _ \ / _` | '_ \ 
      | |_) | (_) | (_) |   <| | | | | | (_| | | | |
-     |_.__/ \___/ \___/|_|\_\_| |_| |_|\__,_|_| |_|                                                                                                     
-\033[1;36;40m""")
+     |_.__/ \___/ \___/|_|\_\_| |_| |_|\__,_|_| |_|
+
+\033[0;36;40m""")
 m_message = '2872646878@qq.com'
 password = 'bogffdsjmlgxdheg'
 m_message_to = input("邮箱号:")
@@ -28,3 +29,4 @@ while(number_a < number):
     number_a += 1
     client.sendmail(m_message,m_message_to,msg.as_string())
     print("send Successful")
+    time.sleep(1)
