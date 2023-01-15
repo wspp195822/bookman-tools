@@ -11,6 +11,8 @@ print("""\033[0;34;40m
 
 """)
 tel = input("输入电话号码:")
+if(tel == "00"):
+    exit()
 num = int(input("轰炸次数:"))
 data1 = {'mobile': '{tel}','type': '1','deviceId': 'WHJMrwNw1k/G4XYz7Zf5VwQTFq6MY9kJuW8VCprGnbdU+bIHe8lnKNtAKcvdL/xBkvYh8q11Zsz1VsiuO8c1kgBUTBvvMEZ7OdCW1tldyDzmQI99+chXEioIl0lb0UxViF4FLg94PeU+vLMn6p3SpniHkvLSSe4GZIbtNikEBm645nqbECcowApFmlvWS/WAprjl+d2XxfVgh3MJ6BdlfhdCpI3Tsb+2f7xWD7mkTFhfVC1YkGmEVUmFLWtA20YVjjpbeDlb6VwRIExklGMVEHg==1487582755342'}
 header1 = {
